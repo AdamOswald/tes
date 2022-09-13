@@ -14,13 +14,12 @@
       - name:Run a one line script
         run:echo Hello, world!
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multiline script
-        run: |
+      - name:Run a multiline script
+        run:|
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: Setup Java JDK
-       -uses: actions/setup-java@v3.5.0
+      - name:Setup Java JDK
+       -uses:actions/setup-java@v3.5.0
   with:
     # The Java version to set up. Takes a whole or semver Java version. See examples of supported syntax in README file
     java-version: 
@@ -55,7 +54,7 @@
 
     - name: Setup .NET Core SDK
   uses: actions/setup-dotnet@v2.1.0
-  with:
+    with
     # Optional SDK version(s) to use. If not provided, will install global.json version when available. Examples: 2.2.104, 3.1, 3.1.x
     dotnet-version: # optional
     # Optional global.json location, if your global.json isn't located in the root of the repo.
