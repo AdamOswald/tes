@@ -8,7 +8,7 @@
   workflow_dispatch:
   
   build: ubuntu-latest
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
          - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
