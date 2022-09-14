@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Piano",
+    "key": "piano",
+    "count": 3
+  },
+  {
+    "name": "Drum",
+    "key": "drum",
+    "count": 3
+  },
+  {
+    "name": "Accordion",
+    "key": "accordion",
+    "count": 2
+  },
+  {
+    "name": "Guitar Acoustic",
+    "key": "guitar_acoustic",
+    "count": 2
+  },
+  {
+    "name": "Violin",
+    "key": "violin",
+    "count": 2
+  },
+  {
+    "name": "Synth",
+    "key": "synth",
+    "count": 3
+  }
+]

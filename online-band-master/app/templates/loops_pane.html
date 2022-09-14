@@ -1,0 +1,13 @@
+<div class="categories">
+  <% _.each(categories, function(category) { %>
+    <span class="hover-button" data-category="<%= category.id %>">
+      <%= category.name %>
+      (<%= category.count %>)
+    </span>
+  <% }); %>
+</div>
+<div class="loops-available">
+  <% _.each(categories, function(category) { %>
+    <div style="display: none;" class="category-loops" data-category="<%= category.id %>"></div>
+  <% }); %>
+</div>

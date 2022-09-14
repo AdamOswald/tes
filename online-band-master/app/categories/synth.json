@@ -1,0 +1,20 @@
+[
+  {
+    "src": ["loops/looperman-l-1299454-0083048-dabromusic-deep-house-happy-life-melody.wav"],
+    "name": "Deep House Happy Life Melody",
+    "duration": 7.741927437641723,
+    "category": "Synth"
+  },
+  {
+    "src": ["loops/looperman-l-1299454-0083047-dabromusic-deep-house-analog-melody.wav"],
+    "name": "Deep House Analog Melody",
+    "duration": 7.741927437641723,
+    "category": "Synth"
+  },
+  {
+    "src": ["loops/looperman-l-1299454-0083046-dabromusic-deep-house-trend-synthesizer.wav"],
+    "name": "Deep House Trend Synthesizer",
+    "duration": 8,
+    "category": "Synth"
+  }
+]

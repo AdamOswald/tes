@@ -1,0 +1,106 @@
+.loop {
+  padding: 5px;
+  background-color: $color1;
+  border-radius: 10px;
+  .loop-name {
+    height: 18px;
+    padding: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.loop-player {
+  height: 30px;
+  background-color: $color6;
+  width: 100%;
+}
+
+.loop-player .loop-play {
+  height: 100%;
+  width: 30px;
+  float: left;
+  cursor: pointer;
+  .icono-play, .icono-pause {
+    float: left;
+    transform: scale(0.7);
+  }
+  &:hover {
+    .icono-play, .icono-pause {
+      color: $hoverColor;
+    }
+  }
+  &:active {
+    .icono-play, .icono-pause {
+      color: $activeColor;
+    }
+  }
+}
+
+.loop-player .loop-current-time, .loop-player .loop-duration {
+  color: white;
+  float: left;
+  padding-top: 11px;
+  font-size: 10px;
+}
+
+.loop-player .loop-time-track {
+  width: calc(100% - 123px);
+  float: left;
+  height: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  margin-top: 12px;
+  background-color: $color2;
+}
+
+.loop-player {
+  .ui-slider-handle {
+    display: none;
+  }
+  .ui-slider-range {
+    background-color: $hoverColor;
+  }
+}
+
+.loop-player .loop-volume {
+  width: 20px;
+  float: left;
+  margin-left: 3px;
+  position: relative;
+  .loop-volume-icon {
+    transform: scale(0.5);
+  }
+  .volume-dropdown {
+    display: none;
+  }
+}
+
+.loop-player .loop-volume:hover {
+  .loop-volume-icon {
+    color: $hoverColor;
+  }
+  .volume-dropdown {
+    display: block;
+    position: absolute;
+    height: 100px;
+    width: 7px;
+    top: -110px;
+    left: 1px;
+    padding: 0 9px;
+    padding-top: 10px;
+    background-color: $color6;
+    .volume-slider {
+      height: 100%;
+      width: auto;
+      border-radius: 5px;
+      background-color: $color2;
+      position: relative;
+    }
+  }
+}
+.loop-player .loop-clear {
+  clear: both;
+}

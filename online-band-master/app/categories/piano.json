@@ -1,0 +1,20 @@
+[
+  {
+    "src": ["loops/Lemon.mp3", "loops/Lemon.ogg"],
+    "name": "Lemon",
+    "duration": 6.857142857142857,
+    "category": "Piano"
+  },
+  {
+    "src": ["loops/looperman-l-1172109-0081261-widetip-what-i-did-for-love-remake.wav"],
+    "name": "What I Did For Love Remake",
+    "duration": 7.504875283446712,
+    "category": "Piano"
+  },
+  {
+    "src": ["loops/looperman-l-0270273-0040137-focus99-old-school-piano-loop-2.wav"],
+    "name": "Old School Piano Loop 2",
+    "duration": 7.619047619047619,
+    "category": "Piano"
+  }
+]
