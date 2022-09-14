@@ -1,0 +1,77 @@
+== About ==
+
+    PyDaw is a python library to mess with Digital Audio Workstation files.
+
+    Currently supported:
+        * FL Studio
+
+    Planned support:
+        * LMMS
+        * Cakewalk
+        * MIDI
+
+    === FL Studio ==
+
+        Currently it is read only and only has useful functions for determining
+        the dependencies of an .flp file, because that's all I need it for at 
+        the moment.
+
+        However the loading already knows a LOT more information about the
+        project. In fact it knows pretty much everything about it and just
+        needs some numbers to be cleaned up in order for the information
+        to be useful. In other words, adding more functionality to this
+        library is possible without more intimate knowledge of the file
+        format.
+
+        In the future I hope to provide editing and saving support.
+
+    === LMMS ===
+
+        LMMS is open source and uses an XML project file so should be a piece of
+        cake to add support for.
+
+    === MIDI ===
+
+        MIDI support should be not too hard with the use of a midi library.
+        Auto-rendering would be an interesting problem to solve.
+
+    === Cakewalk ===
+
+        I haven't done any research on this yet.
+
+== Installation ==
+
+    python setup.py build
+    sudo python setup.py install
+
+== Example usage ==
+
+    import daw
+
+    f = daw.load("some_project.flp")
+
+    print("Beats per minute: %i" % f.tempo())
+    if f.title() != None:
+        print("Project title: %s" % f.title())
+
+    stuff = (
+        ("Generators", f.generators()),
+        ("Samples", f.samples()),
+        ("Effects", f.effects()),
+    )
+    for label, lst in stuff:
+        print("\n%s:\n---------" % label)
+        for item in lst:
+            print(item)
+
+== Author ==
+
+    Written by Andrew Kelley <superjoe30@gmail.com>.
+
+    FL Studio code based on LMMS <http://lmms.sourceforge.net/> FLP import
+    filter, written by Tobias Doerffel.
+
+== Copyright ==
+
+    GPL
+
