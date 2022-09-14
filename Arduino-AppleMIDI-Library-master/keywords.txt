@@ -1,0 +1,34 @@
+#######################################
+# Syntax Coloring Map for AppleMIDI
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+AppleMidi	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+setName KEYWORD2
+setPort KEYWORD2
+setHandleConnected	 KEYWORD2
+setHandleDisconnected	 KEYWORD2
+setHandleException	         KEYWORD2
+setHandleStartReceivedMidi    KEYWORD2
+setHandleReceivedMidi    KEYWORD2
+setHandleEndReceivedMidi    KEYWORD2
+setHandleReceivedRtp     KEYWORD2
+setHandleSendRtp     KEYWORD2
+
+#######################################
+# Instances (KEYWORD3)
+#######################################
+AppleMIDI	KEYWORD3
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+APPLEMIDI_CREATE_INSTANCE	LITERAL1
+APPLEMIDI_CREATE_DEFAULTSESSION_INSTANCE	LITERAL1
