@@ -1,0 +1,246 @@
+@import "variables";
+@import "loop";
+
+html, body {
+  height: 100%;
+}
+
+.left-pane, .loops-pane {
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.left-pane {
+  width: 80%;
+  background-color: $color5;
+  overflow: hidden;
+}
+
+.loops-pane {
+  width: 20%;
+  float: left;
+  border-left: $loopsPaneLeftBorderWidth solid $color2;
+  background-color: $color6;
+  overflow: auto;
+}
+
+.left-pane .loops-main {
+  width: 100%;
+  height: calc(100% - #{$controlsHeight + $controlsTopBorder});
+  background-color: $color5;
+}
+
+.left-pane .controls {
+  width: 100%;
+  height: $controlsHeight;
+  background-color: $color6;
+  border-top: $controlsTopBorder solid $color2;
+  user-select: none;
+  text-align: center;
+}
+
+.loops-main {
+  position: relative;
+}
+
+.tracks {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  max-height: 100%;
+  border-right: 5px solid $color2;
+  background-color: $color6;
+  width: $trackContainerWidth;
+}
+
+.track-info {
+  width: 100%;
+  border-bottom: 1px solid $color1;
+  padding: 5px;
+  color: $color1;
+}
+
+.loops {
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  left: $trackContainerWidth + $trackRightBorderWidth;
+  max-height: 100%;
+  min-height: 100%;
+  max-width: calc(100% - #{$trackContainerWidth + $trackRightBorderWidth});
+  min-width: calc(100% - #{$trackContainerWidth + $trackRightBorderWidth});
+}
+
+.loops .seeker {
+  z-index: 30;
+  position: absolute;
+  border: 1px solid red;
+}
+
+.track {
+  width: 1500px;
+  &:last-child {
+    margin-bottom: 100px;
+  }
+  .loop {
+    position: absolute;
+    background-color: $color1;
+    height: $trackHeight - 20px;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 10px;
+  }
+  &.track-hover {
+    background-color: $hoverColor;
+  }
+}
+
+.track-info, .track {
+  height: $trackHeight;
+  border-bottom: 1px solid $color1;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.add-track.hover-button {
+  // Compensate for the horizontal scrollbar
+  margin-bottom: 100px;
+}
+
+/**
+ * Categories
+ */
+.categories {
+  border-bottom: 5px solid $color2;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.hover-button {
+  padding: 10px;
+  margin: 2px;
+  border-radius: 10px;
+  background-color: $color1;
+  display: inline-block;
+  border: 1px solid $color4;
+  transition: all 0.5s;
+}
+
+.hover-button:hover {
+  background-color: $hoverColor;
+  border: 1px solid $color1;
+  cursor: pointer;
+}
+
+.hover-button:active {
+  color: $color1;
+  background-color: $activeColor;
+}
+
+.hover-button.active {
+  background-color: $activeColor;
+  color: $color1;
+}
+
+/**
+ * Available Loops
+ */
+.loop-available {
+  padding: 5px;
+  background-color: $color1;
+  border-radius: 10px;
+  .loop-name {
+    padding: 5px;
+  }
+  audio {
+    width: 100%;
+  }
+}
+
+.category-loops .loop-available {
+  &:hover {
+    background-color: $hoverColor;
+  }
+}
+
+/**
+ * Drag and drop
+ */
+.ui-draggable-handle {
+  cursor: grab;
+}
+
+.ui-draggable-dragging.collision {
+  background-color: red;
+}
+
+
+/**
+ * The Play button
+ */
+.play-button {
+  background-color: $color6;
+  width: $controlsHeight;
+  height: $controlsHeight;
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-radius: 200px;
+  box-shadow: inset 0px 2px 0px #585858, 1px 1px 0px #000, 2px 2px 5px #000;
+}
+
+.hole {
+  background-color: $color4;
+  width: $controlsHeight - $holeOffset;
+  height: $controlsHeight - $holeOffset;
+  margin-left: auto;
+  margin-right: auto;
+  top: $holeOffset / 2;
+  position: relative;
+  border-radius: 155px;
+  box-shadow: 1px 1px 0px #5d5d5d;
+}
+
+.button {
+  width: $controlsHeight - $buttonOffset;
+  height: $controlsHeight - $buttonOffset;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  cursor: pointer;
+  position: relative;
+  background-image: linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
+  border-radius: 150px;
+  box-shadow: inset 0px 2px 0px #a8a8a8, 0px 2px 0px #2a2a2a, 0px 3px 0px #2a2a2a, 0px 4px 0px #2a2a2a, 0px 5px 0px #2a2a2a, 0px 6px 0px #2a2a2a, 0px 7px 0px #2a2a2a, 0px 8px 0px #2a2a2a, 0px 9px 0px #2a2a2a, 0px 10px 0px #2a2a2a, 10px 20px 10px #000;
+  transition: all .2s;
+}
+
+.button:active {
+  top: 9px;
+  box-shadow: inset 0px 2px 0px #a8a8a8;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  margin-left: 50%;
+  margin-top: 50%;
+  left: -8px;
+  top: -17px;
+  position: relative;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid $color4;
+  transition: all .3s;
+}
+
+.button:hover .triangle {
+  border-left: 25px solid $hoverColor;
+}
+
+.button:active .triangle {
+  border-left: 25px solid $activeColor;
+}

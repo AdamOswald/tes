@@ -1,0 +1,23 @@
+[
+  {
+    "src": ["loops/looperman-l-0718810-0057455-apocalypze-simple-hip-hop-or-rnb-beat.wav"],
+    "name": "Simple Hip Hop OR RnB Beat",
+    "duration": 2.4573242630385486,
+    "category": "Drum"
+  },
+  {
+    "src": [
+      "loops/looperman-l-0102056-0072776-dj4real-trap-backer-be.wav",
+      "loops/looperman-l-0102056-0072776-dj4real-trap-backer-be.ogg"
+    ],
+    "name": "Trap Backer Beat 100",
+    "duration": 4.8021768707482995,
+    "category": "Drum"
+  },
+  {
+    "src": ["loops/looperman-l-0118815-0005068-onebyone-demo-making-drums-for-song-writer-2.wav"],
+    "name": "Demo Making Drums For Song Writer 2",
+    "duration": 6,
+    "category": "Drum"
+  }
+]

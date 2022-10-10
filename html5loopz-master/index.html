@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML5Loopz</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="media/style.css">
+  </head>
+  <body>
+    <header>
+      <button id="play">Play</button>
+      <button id="stop">Stop</button>
+      <!-- canvas id="debug" style="background-color: #000;" height="300" width="500"></canvas -->
+    </header>
+    <section id="lib">
+      <ul>
+      </ul>
+    </section>
+    <section id="timeline">
+      <div id="ruler">
+      </div>
+    </section>
+    <script src="media/jquery.min.js"></script>
+    <script src="media/jquery-ui-1.8.13.custom.min.js"></script>
+    <script src="media/drawing.js"></script>
+    <script src="media/timeline.js"></script>
+    <script src="media/library.js"></script>
+    <script src="media/player.js"></script>
+    <script>
+      for (var i=0; i<Timeline.channels.length; i++) {
+          $('#timeline').append('<div class="track" data-channel="'+i+'"></div>');
+      }
+      var $liblist = $("#lib ul"),
+          $nc;
+      for (var i=0; i<Library.length; i++) {
+        $nc = $('<canvas data-clipid="'+i+'"></canvas>');
+        $liblist.append($nc);
+        drawSample($nc[0], Library[i].sample);
+      }
+
+      $('#lib canvas').draggable({ scope: 'libraryClip', snap: '.track', snapMode: 'inner', revert: true});
+      $('.track').droppable({
+        scope: 'libraryClip',
+        drop: function(e, ui) {
+          var $track = $(e.target),
+              clonedSample;
+          var pxOffset = ui.offset.left - $track.offset().left + 4,
+              sampleOffset = ~~(pxOffset / 64) * 4 * 44100,
+              snapOffset = ~~(pxOffset / 64) * 64,
+              clip = ui.draggable.data('clipid');
+          clonedSample = $('<canvas class="clip"></canvas>');
+          $track.append(clonedSample);
+          clonedSample.css({
+            'position': 'absolute',
+            'left': snapOffset + 'px',
+            'width': ~~(Library[clip].sample.length / 44100 * 256)
+          });
+          drawSample(clonedSample[0], Library[clip].sample);
+          // TODO: Dragging needs to call Timeline.channel[x].moveSample.
+          // TODO: Deleting? (call removeSample())
+          clonedSample.draggable({ scope: 'timelineClip', axis: 'x', containment: '.track', grid: [64, 20]});
+          // This isn't quite right. I think the resolution is too coarse.
+          Timeline.channels[$track.data('channel')].addSample(clip, sampleOffset);
+        }
+      });
+
+      $(document).ready(function() {
+        $('#play').click(function() {
+          Player.play(Timeline);
+        });
+        $('#stop').click(function() {
+          Player.pause();
+        });
+      });
+
+      // var [c0, c1, c2, c3] = Timeline.channels,
+      //     r = 44100;
+      // c0.addSample(0, 0);
+      // c0.addSample(0, 2 * r);
+      // c1.addSample(1, 0);
+      // c1.addSample(1, r);
+      // c1.addSample(1, 2 * r);
+      // c1.addSample(1, 3 * r);
+      // c2.addSample(1, .5 * r);
+      // c2.addSample(1, 1.5 * r);
+      // c2.addSample(1, 2.5 * r);
+      // c2.addSample(1, 3.5 * r);
+      // c3.addSample(1, 0.25 * r);
+      // c3.addSample(1, 1.25 * r);
+
+      // Uncomment to play something annoying on load.
+      /*
+      Player.play(Timeline);
+      */
+
+    </script>
+
+  </body>
+</html>
