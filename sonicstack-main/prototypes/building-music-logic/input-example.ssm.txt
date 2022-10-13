@@ -1,0 +1,61 @@
+rate: 8000
+bpm: 140
+
+voice1: dualwave {
+    freqpower: 0.5,
+    freq2,  freqpower2, 
+    vibfreq: 1, vibdepth: 0,
+    vol: 1  
+}
+
+scale1: scale {12 2 2 1 2 2 2 1} // how many to split an octave into, followed by interval pattern
+
+tune1: 1-2-345- | 642,7565- |
+
+motif1:motif {scale: scale1, voice: voice1, tune: tune1, rootfreq: 440}
+// perhaps I mean motif when I say tune and vice versa?
+
+// yes, it would be nice to have this as a language that either translates to C
+// or is converted to a denser datastructure, read by some program
+
+// what might the above look like in C/CPP?
+
+int rate = 8000;
+int bpm = 140;
+
+Voice voice1 = dualwave(freqpower = 0.5,
+    freq2 = 1, freqpower2 = 0.5, 
+    vibfreq = 1, vibdepth = 0,
+    vol = 1);
+
+Scale scale1 = Scale(base = 2, powerStep = 1/12, intervals = {2, 2, 1, 2, 2, 2});
+
+Motif motif1 = ParseMelody(text = "1-2-345- | 642,7565- |", defaultLength = 4);
+
+// should end up something like
+// {Note(degree=1, scale=0, length=2), Note(2, 0, 2), 
+//       Note(3, 0, 4), Note(4, 0, 4), Note(5, 0, 4), 
+//       Note(6, 0, 4), Note(4, 0, 4), Note(2, 0, 4), Note(7, -1, 4),
+//       Note(5, 0, 4), Note(6, 0, 4), Note(5, 0, 2) }
+// because , before a note shifts to the next scale down, while ' shifts up
+
+Tune tune1 = Tune(scale=scale1, voice=voice1, motif=motif1, rootFrequency=440, bpm=bpm, rate=rate);
+Tune tune2 = Tune(scale=scale1, voice=voice1, motif=motif1, rootFrequency=550, bpm=bpm, rate=rate);
+Tune tune3 = Tune(scale=scale2, voice=voice2, motif=motif1, rootFrequency=440, bpm=bpm, rate=rate);
+
+Tune tune4 = JoinTunes({tune1, tune2, tune3, tune1});
+Tune tune5 = JoinTunes({tune1, tune1, tune2, tune3});
+
+// then something like:
+
+Track track1 = Track(tune=tune4, pan=1, level=1, startBeat=1);
+Track track2 = Track(tune=tune5, pan=-1, level=1, startBeat=1);
+
+Mixdown mix = Mixdown({track1, track2});
+
+mix.write();
+
+// or whatever
+
+// dualwave and the likes will need to implement some kind of thing like this:
+//  char* render(frequency, length, rate, bpm);
