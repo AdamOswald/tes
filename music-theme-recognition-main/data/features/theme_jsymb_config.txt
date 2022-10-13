@@ -1,0 +1,386 @@
+<jSymbolic_options>
+window_size=0.0
+window_overlap=0.0
+save_features_for_each_window=false
+save_overall_recording_features=true
+convert_to_arff=false
+convert_to_csv=true
+<features_to_extract>
+Average Note to Note Change in Dynamics
+Wrapped Vertical Interval Histogram
+Prevalence of Short Rhythmic Values
+Unpitched Instruments Present
+Mean Melodic Interval
+Number of Strong Rhythmic Pulses
+Mean Pitch
+Most Common Pitch Class
+Relative Prevalence of Top Pitch Classes
+Variability of Note Prevalence of Pitched Instruments
+Total Number of Notes
+Prevalence of Most Common Melodic Interval
+Minor Major Triad Ratio
+Pitch Class Histogram
+Strongest Rhythmic Pulse
+Rhythmic Value Variability in Run Lengths Histogram
+Maximum Note Duration
+First Pitch
+Pitched Instruments Present
+Last Pitch Class
+Initial Tempo
+First Pitch Class
+Quadruple Initial Meter
+Brass Prevalence
+Pitch Class Variability After Folding
+Parallel Motion
+Vertical Minor Third Prevalence
+Relative Size of Melodic Intervals in Lowest Line
+Chord Duration
+Voice Separation
+Variability of Number of Simultaneous Pitch Classes
+Direction of Melodic Motion
+Prevalence of Most Common Rhythmic Value
+Beat Histogram
+Rhythmic Value Kurtosis
+Number of Strong Rhythmic Pulses - Tempo Standardized
+Pitch Class Skewness After Folding
+Unpitched Percussion Instrument Prevalence
+Orchestral Strings Prevalence
+Median Partial Rest Duration
+Melodic Perfect Fifths
+Melodic Tritones
+Variability of Number of Simultaneous Pitches
+Average Number of Independent Voices
+Strength of Second Strongest Rhythmic Pulse - Tempo Standardized
+Folded Fifths Pitch Class Histogram
+Beat Histogram Tempo Standardized
+Partial Rests Fraction
+Range
+Simple Initial Meter
+Importance of Bass Register
+Contrary Motion
+Dominant Seventh Chords
+Number of Common Pitches
+Minor Major Melodic Third Ratio
+Second Most Common Vertical Interval
+Relative Range Isolation of Loudest Voice
+Vertical Sixths
+Note Density per Quarter Note per Voice
+Melodic Embellishments
+Repeated Notes
+Note Density per Quarter Note Variability
+Number of Different Rhythmic Values Present
+Rhythmic Value Variability
+Note Density per Quarter Note
+Prevalence of Most Common Pitch
+Rhythmic Variability - Tempo Standardized
+Electric Guitar Prevalence
+Prevalence of Long Rhythmic Values
+Microtone Prevalence
+Average Number of Simultaneous Pitches
+Acoustic Guitar Prevalence
+Variability in Rhythmic Value Run Lengths
+Note Prevalence of Pitched Instruments
+Variability of Note Prevalence of Unpitched Instruments
+Number of Common Melodic Intervals
+Woodwinds Prevalence
+Variation of Dynamics
+Pitch Class Variability
+Amount of Arpeggiation
+String Keyboard Prevalence
+Voice Equality - Range
+Mean Rhythmic Value Run Length
+Violin Prevalence
+Mean Rhythmic Value Offset
+Melodic Sevenths
+Saxophone Prevalence
+Interval Between Most Prevalent Pitches
+Strongest Rhythmic Pulse - Tempo Standardized
+Polyrhythms
+Major or Minor
+Number of Moderate Rhythmic Pulses
+Tempo Variability
+Number of Unpitched Instruments
+Non-Standard Chords
+Rhythmic Value Median Run Lengths Histogram
+Melodic Interval Histogram
+Seventh Chords
+Rhythmic Looseness
+Number of Pitches
+Melodic Pitch Variety
+Most Common Rhythmic Value
+Rhythmic Value Histogram
+Voice Equality - Melodic Leaps
+Pitch Class Kurtosis
+Average Time Between Attacks
+Difference Between Most Common Rhythmic Values
+Minimum Note Duration
+Last Pitch
+Rhythmic Value Skewness
+Duple Initial Meter
+Distance Between Two Most Common Vertical Intervals
+Stepwise Motion
+Mean Partial Rest Duration
+Voice Equality - Dynamics
+Importance of Middle Register
+Vertical Tritones
+Melodic Sixths
+Melodic Thirds
+Pitch Class Kurtosis After Folding
+Complex Chords
+Second Strongest Rhythmic Pulse
+Complex Initial Meter
+Number of Relatively Strong Rhythmic Pulses
+Range of Rhythmic Values
+Melodic Octaves
+Longest Partial Rest
+Average Range of Glissandos
+Most Common Vertical Interval
+Average Interval Spanned by Melodic Arcs
+Shortest Rhythmic Value
+Vertical Minor Seconds
+Initial Time Signature
+Number of Relatively Strong Rhythmic Pulses - Tempo Standardized
+Second Strongest Rhythmic Pulse - Tempo Standardized
+Oblique Motion
+Dynamic Range
+Partial Chords
+Average Time Between Attacks for Each Voice
+Chord Type Histogram
+Note Density
+Vertical Dissonance Ratio
+Dominant Spread
+Distance Between Most Prevalent Melodic Intervals
+Amount of Staccato
+Combined Strength of Two Strongest Rhythmic Pulses - Tempo Standardized
+Compound Initial Meter
+Harmonicity of Two Strongest Rhythmic Pulses - Tempo Standardized
+Polyrhythms - Tempo Standardized
+Harmonicity of Two Strongest Rhythmic Pulses
+Most Common Melodic Interval
+Variability of Complete Rest Durations
+Number of Common Pitch Classes
+String Ensemble Prevalence
+Strength of Strongest Rhythmic Pulse
+Vibrato Prevalence
+Melodic Large Intervals
+Vertical Perfect Fourths
+Complete Rests Fraction
+Note Density Variability
+Variability of Number of Independent Voices
+Vertical Thirds
+Number of Common Rhythmic Values Present
+Variability of Note Durations
+Longest Complete Rest
+Prevalence of Most Common Vertical Interval
+Triple Initial Meter
+Mean Rhythmic Value
+Longest Rhythmic Value
+Vertical Sevenths
+Parallel Fifths
+Strong Tonal Centres
+Vertical Unisons
+Strength Ratio of Two Strongest Rhythmic Pulses
+Vertical Interval Histogram
+Average Number of Simultaneous Pitch Classes
+Prevalence of Dotted Notes
+Chromatic Motion
+Variability Across Voices of Combined Rests
+Parallel Octaves
+Mean Complete Rest Duration
+Vertical Perfect Fifths
+Variability of Partial Rest Durations
+Relative Range of Loudest Voice
+Variation of Dynamics In Each Voice
+Melodic Perfect Fourths
+Interval Between Most Prevalent Pitch Classes
+Combined Strength of Two Strongest Rhythmic Pulses
+Relative Prevalence of Most Common Rhythmic Values
+Average Rest Fraction Across Voices
+Number of Moderate Rhythmic Pulses - Tempo Standardized
+Median Rhythmic Value Run Length
+Voice Equality - Number of Notes
+Median Complete Rest Duration
+Rhythmic Looseness - Tempo Standardized
+Pitch Skewness
+Basic Pitch Histogram
+Metrical Diversity
+Electric Instrument Prevalence
+Relative Prevalence of Most Common Melodic Intervals
+Average Length of Melodic Arcs
+Diminished and Augmented Triads
+Average Variability of Time Between Attacks for Each Voice
+Prevalence of Second Most Common Vertical Interval
+Strength of Strongest Rhythmic Pulse - Tempo Standardized
+Maximum Number of Independent Voices
+Variability of Rhythmic Value Offsets
+Prevalence of Medium Rhythmic Values
+Relative Prevalence of Top Pitches
+Duration in Seconds
+Strength of Second Strongest Rhythmic Pulse
+Relative Note Density of Highest Line
+Importance of Loudest Voice
+Prevalence of Very Long Rhythmic Values
+Pitch Class Skewness
+Voice Overlap
+Average Note Duration
+Prevalence of Most Common Pitch Class
+Number of Pitch Classes
+Note Prevalence of Unpitched Instruments
+Vertical Major Third Prevalence
+Pitch Variability
+Perfect Vertical Intervals
+Rhythmic Variability
+Relative Range of Highest Line
+Prevalence Ratio of Two Most Common Vertical Intervals
+Most Common Pitch
+Standard Triads
+Mean Pitch Class
+Time Prevalence of Pitched Instruments
+Voice Equality - Note Duration
+Strength Ratio of Two Strongest Rhythmic Pulses - Tempo Standardized
+Relative Note Durations of Lowest Line
+Prevalence of Very Short Rhythmic Values
+Number of Pitched Instruments
+Glissando Prevalence
+Vertical Octaves
+Variability of Time Between Attacks
+Mean Tempo
+Variability of Voice Separation
+Pitch Kurtosis
+Importance of High Register
+Median Rhythmic Value Offset
+Similar Motion
+<input_files>
+data/bin/bitmidi/A-Midsummer-Night-Dream-(Ouverture)_bitmidi.mid
+data/bin/bitmidi/A-Thousand-Hours_bitmidi.mid
+data/bin/bitmidi/A-Whole-New-World-(Theme-From-'Aladdin')_bitmidi.mid
+data/bin/bitmidi/abba-dancing_queen_bitmidi.mid
+data/bin/bitmidi/Abba-money_bitmidi.mid
+data/bin/bitmidi/ABBA.Angel Eyes K_bitmidi.mid
+data/bin/bitmidi/ABBA.Chiquitita K_bitmidi.mid
+data/bin/bitmidi/ABBA.Dancing queen K_bitmidi.mid
+data/bin/bitmidi/ABBA.Happy new year_bitmidi.mid
+data/bin/bitmidi/ABBA.Mamma Mia K_bitmidi.mid
+data/bin/bitmidi/ABBA.Take a chance on me K_bitmidi.mid
+data/bin/bitmidi/ABBA.The winner takes it all K_bitmidi.mid
+data/bin/bitmidi/adele-rolling_in_the_deep_bitmidi.mid
+data/bin/bitmidi/adele-skyfall_bitmidi.mid
+data/bin/bitmidi/adele-someone_like_you_bitmidi.mid
+data/bin/bitmidi/Ain't-No-Mountain-High-Enough_bitmidi.mid
+data/bin/bitmidi/Ain't-No-Sunshine_bitmidi.mid
+data/bin/bitmidi/Aladdin(AFriendLikeMe)_bitmidi.mid
+data/bin/bitmidi/Aladdin(ArabianNights)_bitmidi.mid
+data/bin/bitmidi/Aladdin(PrinceAli)_bitmidi.mid
+data/bin/bitmidi/All-I-Ask-Of-You-(From-'The-Phantom-Of-The-Opera')_bitmidi.mid
+data/bin/bitmidi/allstar_bitmidi.mid
+data/bin/bitmidi/amazing-grace-piano_bitmidi.mid
+data/bin/bitmidi/AMRINGER.Can't help falling in love_bitmidi.mid
+data/bin/bitmidi/Andrew Lloyd Webber - Phantom of the Opera_bitmidi.mid
+data/bin/bitmidi/Another-One-Bites-The-Dust-1_bitmidi.mid
+data/bin/bitmidi/Aqua - Barbie Girl_bitmidi.mid
+data/bin/bitmidi/Assassin's Creed: Rogue - Main Theme_bitmidi.mid
+data/bin/bitmidi/Auld-Lang-Syne_bitmidi.mid
+data/bin/bitmidi/Avatar: The Last Airbender - Leaves From The Vine_bitmidi.mid
+data/bin/bitmidi/Avengers: Age of Ultron - Heroes_bitmidi.mid
+data/bin/bitmidi/avicii-hey_brother_bitmidi.mid
+data/bin/bitmidi/avicii-wake_me_up_bitmidi.mid
+data/bin/bitmidi/B.HELMS.Jingle bell rock K_bitmidi.mid
+data/bin/bitmidi/B.TYLER.HoldinG out for hero K_bitmidi.mid
+data/bin/bitmidi/Backstreet Boys - I Want It That Way_bitmidi.mid
+data/bin/bitmidi/bastille-pompeii_bitmidi.mid
+data/bin/bitmidi/Batman_bitmidi.mid
+data/bin/bitmidi/batman-movie-theme_en_bitmidi.mid
+data/bin/bitmidi/Batman: Arkham Origins - Arkham Origins Suite_bitmidi.mid
+data/bin/bitmidi/Beauty-and-the-Beast_bitmidi.mid
+data/bin/bitmidi/BEN.E.KING.Stand by me K_bitmidi.mid
+data/bin/bitmidi/BENSON.Nothing's gonna change my love for you_bitmidi.mid
+data/bin/bitmidi/beyonce-halo_bitmidi.mid
+data/bin/bitmidi/billie_bitmidi.mid
+data/bin/bitmidi/Billy Joel - Piano Man_bitmidi.mid
+data/bin/bitmidi/Billy Joel - Uptown Girl_bitmidi.mid
+data/bin/bitmidi/Blackbird-1_bitmidi.mid
+data/bin/bitmidi/Bon Jovi - Living on a Prayer_bitmidi.mid
+data/bin/bitmidi/Bonnie Tyler - Total Eclipse of the Heart_bitmidi.mid
+data/bin/bitmidi/boss-battle_bitmidi.mid
+data/bin/bitmidi/brahms-lullaby-wiegenlied-piano_bitmidi.mid
+data/bin/bitmidi/braveheart_bitmidi.mid
+data/bin/bitmidi/Bridal-March-(Wedding-March)_bitmidi.mid
+data/bin/bitmidi/BRITNEY SPEARS.Baby one more time K_bitmidi.mid
+data/bin/bitmidi/BRITNEY SPEARS.Oops I Did It Again k_bitmidi.mid
+data/bin/bitmidi/C.DOUGLAS.Kung fu fighting K_bitmidi.mid
+data/bin/bitmidi/Can't help falling in love with you L_bitmidi.mid
+data/bin/bitmidi/Can't-Help-Falling-In-Love-1_bitmidi.mid
+data/bin/bitmidi/cantina-3_bitmidi.mid
+data/bin/bitmidi/CARELESS.MID_bitmidi.mid
+data/bin/bitmidi/carol-of-the-bells-clarinet-and-piano_bitmidi.mid
+data/bin/bitmidi/CATS.Memory k_bitmidi.mid
+data/bin/bitmidi/Celine Dion - Because You Loved Me_bitmidi.mid
+data/bin/bitmidi/coldplay-a_sky_full_of_stars_bitmidi.mid
+data/bin/bitmidi/coldplay-paradise_bitmidi.mid
+data/bin/bitmidi/Cyndi Lauper - True Colors_bitmidi.mid
+data/bin/bitmidi/D.BYAS.Over the rainbow_bitmidi.mid
+data/bin/bitmidi/DION.My heart will go on K_bitmidi.mid
+data/bin/bitmidi/disney_bitmidi.mid
+data/bin/bitmidi/Don't-Worry-Be-Happy-2_bitmidi.mid
+data/bin/bitmidi/Dream-A-Little-Dream-Of-Me_bitmidi.mid
+data/bin/bitmidi/ELO - Mr Blue Sky_bitmidi.mid
+data/bin/bitmidi/EUROPE.The final countdown K_bitmidi.mid
+data/bin/bitmidi/EURYTHMICS.Sweet dreams K_bitmidi.mid
+data/bin/bitmidi/Every breath you take_bitmidi.mid
+data/bin/bitmidi/Finale-StarWars_bitmidi.mid
+data/bin/bitmidi/FIVE.We will rock you K.MID_bitmidi.mid
+data/bin/bitmidi/Fly-Me-To-The-Moon_bitmidi.mid
+data/bin/bitmidi/FOOL'S GARDEN.Lemon tree_bitmidi.mid
+data/bin/bitmidi/Foreigner - I Want To Know What Love Is_bitmidi.mid
+data/bin/bitmidi/funeral-march_bitmidi.mid
+data/bin/bitmidi/G.MICHAE-QUEEN.Somebody to love_bitmidi.mid
+data/bin/bitmidi/go-tell-it-on-the-mountain-guitar-glenn-jarrett_bitmidi.mid
+data/bin/bitmidi/God-Save-The-Queen-2_bitmidi.mid
+data/bin/bitmidi/GREENDAY.Boulevard of broken K.MID_bitmidi.mid
+data/bin/bitmidi/Hans Zimmer - At World's End_bitmidi.mid
+data/bin/bitmidi/Happy-Birthday-2_bitmidi.mid
+data/bin/bitmidi/Heal-The-World-1_bitmidi.mid
+data/bin/bitmidi/How-Great-Thou-Art_bitmidi.mid
+data/bin/bitmidi/I Just Can't Wait To Be King.BSO The Lion King_bitmidi.mid
+data/bin/bitmidi/Imagine dragons - Radioactive_bitmidi.mid
+data/bin/bitmidi/imagine_dragons-demons_bitmidi.mid
+data/bin/bitmidi/imperial_bitmidi.mid
+data/bin/bitmidi/impossiblei_bitmidi.mid
+data/bin/bitmidi/Isn't-She-Lovely-1_bitmidi.mid
+data/bin/labean/bells.mid
+data/bin/labean/court.mid
+data/bin/labean/Godhelpt.mid
+data/bin/labean/Hellfire.mid
+data/bin/labean/Outthere.mid
+data/bin/labean/topsy.mid
+data/bin/midisfree/Tangled - I See the Light___WWW.MIDISFREE.COM.mid
+data/bin/midiworld/Disney Themes_Can You Feel The Love Tonight_midiworld.mid
+data/bin/midiworld/Disney Themes_Circle Of Life_midiworld.mid
+data/bin/midiworld/Disney Themes_Colors Of The Wind_midiworld.mid
+data/bin/midiworld/Disney Themes_Gravity Falls Theme_midiworld.mid
+data/bin/midiworld/Disney Themes_Hakuna Matata_midiworld.mid
+data/bin/midiworld/Disney Themes_Kiss The Girl_midiworld.mid
+data/bin/midiworld/Disney Themes_Reflection_midiworld.mid
+data/bin/midiworld/Disney Themes_The Bear Necessities_midiworld.mid
+data/bin/midiworld/Disney Themes_Under The Sea_midiworld.mid
+data/bin/midiworld/Disney Themes_You've Got A Friend_midiworld.mid
+data/bin/midiworld/John williams_Star Wars Cello Bass Duet_midiworld.mid
+data/bin/midiworld/Movie Themes_Chariots of Fire - by Vangelis_midiworld.mid
+data/bin/midiworld/Movie Themes_James Bond_midiworld.mid
+data/bin/midiworld/Movie Themes_Star Trek First Contact_midiworld.mid
+data/bin/midiworld/Movie Themes_Star Wars - Duel of the Fates_midiworld.mid
+data/bin/midiworld/Movie Themes_Superman_midiworld.mid
+data/bin/midiworld/Movie Themes_The Wizard of Oz - Over the Rainbow_midiworld.mid
+data/bin/midiworld/National Anthems_Malaysia_midiworld.mid
+data/bin/midiworld/Tegan and Sara_Everything is Awesome_midiworld.mid
+data/bin/midiworld/TV Themes_Hawaii 50_midiworld.mid
+data/bin/midiworld/TV Themes_Pokemon_midiworld.mid
+data/bin/nonstop2k/John-Williams-Indiana-Jones-Theme-Anonymous-20190203094356-nonstop2k.com.mid
+data/bin/nonstop2k/Klaus-Badelt-Hans-Zimmer-Tiesto-He-s-a-pirate-Pirates-of-the-Caribbean-Anonymous-20200922214702-nonstop2k.com.mid
+data/bin/nonstop2k/Mark-Northam-Married-Life-From-Up-Anonymous-20211201102105-nonstop2k.com.mid
+data/bin/nonstop2k/Phil-Collins-No-Way-Out-Theme-from-Disney-s-Brother-Bear-Anonymous-20191222174921-nonstop2k.com.mid
+data/bin/pandatooth/For the first time in forever - split track.mid
+data/bin/pandatooth/Romantic_Flight Finale.mid
+<output_files>
+feature_values_save_path=data/features/song_theme_feature_database.xml
+feature_definitions_save_path=data/features/song_theme_feature_definitions.xml
