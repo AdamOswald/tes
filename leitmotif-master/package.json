@@ -10,6 +10,10 @@
     "type": "git",
     "url": "https://github.com/jshanley/leitmotif.git"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdamOswald/tes.git"
+  },
   "keywords": [
     "music",
     "notation"
@@ -18,8 +22,21 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jshanley/leitmotif/issues"
+  ],
+  "author": "Adam Oswald",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdamOswald/tes/issues"
   },
   "homepage": "https://github.com/jshanley/leitmotif",
+  "devDependencies": {
+    "grunt": "^1.5.3",
+    "grunt-contrib-nodeunit": "~0.3.2",
+    "grunt-smash": "^0.1.0",
+    "grunt-jsbeautifier": "^0.2.6",
+    "grunt-contrib-uglify": "^0.4.0"
+  },
+  "homepage": "https://github.com/AdamOswald/tes",
   "devDependencies": {
     "grunt": "^1.5.3",
     "grunt-contrib-nodeunit": "~0.3.2",
