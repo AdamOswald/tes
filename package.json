@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/jshanley/leitmotif",
   "devDependencies": {
-    "grunt": "~0.4.3",
+    "grunt": "~1.5.3",
     "grunt-contrib-nodeunit": "~0.3.2",
     "grunt-smash": "^0.1.0",
     "grunt-jsbeautifier": "^0.2.6",
