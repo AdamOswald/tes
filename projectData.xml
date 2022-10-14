@@ -13948,7 +13948,6 @@
 	<integer>100000</integer>
 </dict>
 </plist>
-
 Info.plistInfo.plistInfo.plistInfo.plistInfo.plist
 Info.plist
 Info.plist
@@ -13958,14 +13957,9 @@ Info.plistInfo.plistInfo.plistInfo.plist
 Info.plistInfo.plist
 Info.plist
 Info.plistInfo.plist
-
 Info.plist
-
-
 Info.plistInfo.plistInfo.plistInfo.plistInfo.plistInfo.plistInfo.plist    Info.plist Info.plist Info.plist 
-
 Info.plist
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -13974,7 +13968,6 @@ Info.plist
 	<string>2ECBA4E8-6DF0-47BA-A9B8-B25EA6A572EC</string>
 </dict>
 </plist>
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -14049,7 +14042,6 @@ Info.plist
 	<integer>1050</integer>
 </dict>
 </plist>
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -14199,7 +14191,6 @@ b�kO�7�p��v)/^a�x
 �q�z*�@Eg�F5�&��l�~<�Kϛ�Qy�L	�p�sTy�}7��G�$���|7][g��&U�Rs1^[˩��/Q���0�R}��=���xH�s�ڭƶ^�Mx�^�C�Q���*�3���۵�}�_;w���#����G��vl�&R���{"s*����yN��+���~kK��Ƴ�7߽�-U��'�e�����+�̫�>���͆�x�kߓ��9"sr��ʡ���	=e b�O��W�#"l�O��2�qj}���ܫ}(��PjP�@*����t���8�@�\��5����G��߮l��UK͕Y�JS��U��'�{�hأy�I��
 ��D�FY7k�0��3J'T�3S=O���h��N��ݷ{3
 �oT��Ȟݍ?�>3��ޔ���"b����ŋ�*�]�&�釀�8Y�	����ɵ�'�ӥ�5�/�n�G��ɼ7:MzU�ʈ)���k_���m�[�۱˾...more
-
 PK
 ��T" MIDI.band/Caches.nosync/_cacheInfoUT
 ��b��bfcux��U�Qk�0���H�o][�%M�IA6a:أ$a�Y
@@ -14219,7 +14210,6 @@ PK
 ��_/��4m϶��D^1�X<���?0O|Y�N�l^���S��P;1+�(HLL�Cؚlz��t�GwFUD�঒_�H�
 I�o�M�ȣ��W���;�q@�$^nl�������b�A8rz-
 &E�IH*y�/g�����<�o��K�����HL�V(zf�Q~"�]��F(�q�GYV�'�]:]童Ź�NI	LW@��Z\2+u�<�����t�kJqz3L�<���TU_u��_�g��Si�G}<
-
 ���``()��d�Z�b|�=-�=EYv�4��#������Ҳ����G�B����5�{~~H�ͫOp���П�&kq�gHZ�����K�;���p���Y�{8��{��(�x8�p��C㏨���\K�����H�'S�Je5����f4��E9Y!����m\�
 �Ǐ׼��KjF��x}�p���t�Ǐ��=yE�|.�fx�_�������c��q\���`tN�������1^����#�s��ǩ��,��,r�QM�>I���|=�~���j��!��t���gIV�Pw���Ml낤�q~rQ?+�/a���٬��C�{������dCC��pJ"g\�'��Q�=Y�
 �T��خ�܄z
@@ -14267,13 +14257,9 @@ b�kO�7�p��v)/^a�x
 �q�z*�@Eg�F5�&��l�~<�Kϛ�Qy�L	�p�sTy�}7��G�$���|7][g��&U�Rs1^[˩��/Q���0�R}��=���xH�s�ڭƶ^�Mx�^�C�Q���*�3���۵�}�_;w���#����G��vl�&R���{"s*����yN��+���~kK��Ƴ�7߽�-U��'�e�����+�̫�>���͆�x�kߓ��9"sr��ʡ���	=e b�O��W�#"l�O��2�qj}���ܫ}(��PjP�@*����t���8�@�\��5����G��߮l��UK͕Y�JS��U��'�{�hأy�I��
 ��D�FY7k�0��3J'T�3S=O���h��N��ݷ{3
 �oT��Ȟݍ?�>3��ޔ���"b����ŋ�*�]�&�釀�8Y�	����ɵ�'�ӥ�5�/�n�G��ɼ7:MzU�ʈ)���k_���m�[�۱˾...more
-
 <iframe src="https://drive.google.com/file/d/1-8XhpOk1Iv7Du78rpOH1pf5tQto3nRdB/preview" width="640" height="480" allow="autoplay"></iframe>
-
 https://github.com/TheAdam-Verse/tes/blob/main/Copy%20of%20MIDI%202.txt?raw=true
-
 BNDLband
-
 version: 0.2.3
 files:
   - url: DAWG-Setup-0.2.3.exe
@@ -14283,7 +14269,6 @@ files:
 path: DAWG-Setup-0.2.3.exe
 sha512: INBSUFvGQo6v5UwjbRgeGQEdXuc4KjxZjmgPiGzNr19/z6mrmuyDUAydyaXHVc9s5C647iti+RrXw1yR+k6rhw==
 releaseDate: '2020-03-05T14:15:13.004Z'
-
 {
   "success": true,
   "skiplist": [
@@ -14647,7 +14632,6 @@ releaseDate: '2020-03-05T14:15:13.004Z'
     "smartlogin.realsmart.co.uk"
   ]
 }
-
 5 AI Music Apps You Can Use as a Melody Generator
 AI Lyrics, Music, and Song Creation Apps | AUDOIR, LLC
 Home - Amper Score
@@ -14658,120 +14642,81 @@ https://github.com/hostedposted/BlooketHackGUI
 https://github.com/hostedposted/jackbox
 https://github.com/hostedposted/Blooket-Hacks
 https://imageupscaler.com/ai-image-generator/
-
-
 5 AI Music Apps You Can Use as a Melody Generator
-
 AI Lyrics, Music, and Song Creation Apps | AUDOIR, LLC
-
 Home - Amper Score
-
 https://futureai.guru/technologies/brian-simulator-ii-open-source-agi-toolkit/
-
 https://futureaiguru.com/BrainSimDownload.aspx
-
 https://www.betabound.com/depix-private-beta/
-
 https://github.com/hostedposted/BlooketHackGUI
-
 https://github.com/hostedposted/jackbox
-
 https://github.com/hostedposted/Blooket-Hacks
-
 https://imageupscaler.com/ai-image-generator/
-
-
 https://imageupscaler.com/ai-image-generator/
-
-
 Doctor Who, God, Undertale, Megalovania, Genshin Impact, Sans, The Doctor, Aether, Fortnite, Battle Royale, FNBR, Fortnite Battle Royale, Zero, Point, Zero Point, Fortnite Zero Point, Nexus, Celestial, Galactic, Galaxy, Geño, Black Hole, Time Vortex, SuperNova, Super Nova, Rift, Rift Butterfly, Energy, Zero Point Energy, ZPE, Wormhole, Vortex, Cube, Cube Energy, Kevin, Kevin The Cube, Dark, Darkness, Dark Energy, Darkness Energy, The Last Reality, TLR, Zero Bloom, Bloom, Reality, Reality Tree, Chroma, Flame, Chroma Flame, Chroma Energy, Dark Matter, Matter, Irminsul, Irminsul Tree, Irminsul Branch, Irminsul Tree Branch, Irminsul Roots, Irminsul Root, Irminsul Tree Roots, Irminsul Tree Root, Ley Line, Ley, Music, Audio, MP3, mp3, WAV, wav, Image, Picture, JPG, Midi instrument, Midi File MID, mid, MIDI, midi, Sci-Fi, Science, Space, AI, Technology
 Doctor Who, God, Undertale, Megalovania, Genshin Impact, Sans, The Doctor, Aether, Fortnite, Battle Royale, FNBR, Fortnite Battle Royale, Zero, Point, Zero Point, Fortnite Zero Point, Nexus, Celestial, Galactic, Galaxy, Geño, Black Hole, Time Vortex, SuperNova, Super Nova, Rift, Rift Butterfly, Energy, Zero Point Energy, ZPE, Wormhole, Vortex, Cube, Cube Energy, Kevin, Kevin The Cube, Dark, Darkness, Dark Energy, Darkness Energy, The Last Reality, TLR, Zero Bloom, Bloom, Reality, Reality Tree, Chroma, Flame, Chroma Flame, Chroma Energy, Dark Matter, Matter, Irminsul, Irminsul Tree, Irminsul Branch, Irminsul Tree Branch, Irminsul Roots, Irminsul Root, Irminsul Tree Roots, Irminsul Tree Root, Ley Line, Ley, Music, Audio, MP3, mp3, WAV, wav, Image, Picture, JPG, Midi instrument, Midi File MID, mid, MIDI, midi, Sci-Fi, Science, Space, AI, Technology.jpg
-
 Doctor Who, God, Undertale, Megalovania, Genshin Impact, Sans, The Doctor, Aether, Fortnite, Battle Royale, FNBR, Fortnite Battle Royale, Zero, Point, Zero Point, Fortnite Zero Point, Nexus, Celestial, Galactic, Galaxy, Geño, Black Hole, Time Vortex, SuperNova, Super Nova, Rift, Rift Butterfly, Energy, Zero Point Energy, ZPE, Wormhole, Vortex, Cube, Cube Energy, Kevin, Kevin The Cube, Dark, Darkness, Dark Energy, Darkness Energy, The Last Reality, TLR, Zero Bloom, Bloom, Reality, Reality Tree, Chroma, Flame, Chroma Flame, Chroma Energy, Dark Matter, Matter, Irminsul, Irminsul Tree, Irminsul Branch, Irminsul Tree Branch, Irminsul Roots, Irminsul Root, Irminsul Tree Roots, Irminsul Tree Root, Ley Line, Ley, Music, Audio, MP3, mp3, WAV, wav, Image, Picture, JPG, Midi instrument, Midi File MID, mid, MIDI, midi, Sci-Fi, Science, Space, AI, Technology
-
 Doctor Who, God, Undertale, Megalovania, Genshin Impact, Sans, The Doctor, Aether, Fortnite, Battle Royale, FNBR, Fortnite Battle Royale, Zero, Point, Zero Point, Fortnite Zero Point, Nexus, Celestial, Galactic, Galaxy, Geño, Black Hole, Time Vortex, SuperNova, Super Nova, Rift, Rift Butterfly, Energy, Zero Point Energy, ZPE, Wormhole, Vortex, Cube, Cube Energy, Kevin, Kevin The Cube, Dark, Darkness, Dark Energy, Darkness Energy, The Last Reality, TLR, Zero Bloom, Bloom, Reality, Reality Tree, Chroma, Flame, Chroma Flame, Chroma Energy, Dark Matter, Matter, Irminsul, Irminsul Tree, Irminsul Branch, Irminsul Tree Branch, Irminsul Roots, Irminsul Root, Irminsul Tree Roots, Irminsul Tree Root, Ley Line, Ley, Music, Audio, MP3, mp3, WAV, wav, Image, Picture, JPG, Midi instrument, Midi File MID, mid, MIDI, midi, Sci-Fi, Science, Space, AI, Technology.jpg
-
 from xgboost import XGBClassifier
 import pandas as pd
 import numpy as np
 import joblib
-
 data = pd.read_csv("./data/amazon_musical_reviews/Musical_instruments_reviews.csv")
 data.head()
-
 data["reviewText"].iloc[1]
-
 import nltk
 nltk.download('stopwords')
-
 def threshold_ratings(data):
     def threshold_overall_rating(rating):
         return 0 if int(rating)<=3 else 1
     data["overall"] = data["overall"].apply(threshold_overall_rating)
-
 def remove_stopwords_punctuation(data):
     data["review"] = data["reviewText"] + data["summary"]
-
     puncs = list(punctuation)
     stops = stopwords.words("english")
-
     def remove_stopwords_in_str(input_str):
         filtered = [char for char in str(input_str).split() if char not in stops]
         return ' '.join(filtered)
-
     def remove_punc_in_str(input_str):
         filtered = [char for char in input_str if char not in puncs]
         return ''.join(filtered)
-
     def remove_stopwords_in_series(input_series):
         text_clean = []
         for i in range(len(input_series)):
             text_clean.append(remove_stopwords_in_str(input_series[i]))
         return text_clean
-
     def remove_punc_in_series(input_series):
         text_clean = []
         for i in range(len(input_series)):
             text_clean.append(remove_punc_in_str(input_series[i]))
         return text_clean
-
     data["review"] = remove_stopwords_in_series(data["review"].str.lower())
     data["review"] = remove_punc_in_series(data["review"].str.lower())
-
 def drop_unused_colums(data):
     data.drop(['reviewerID', 'asin', 'reviewerName', 'helpful', 'unixReviewTime', 'reviewTime', "reviewText", "summary"], axis=1, inplace=True)
-
 def preprocess_reviews(data):
     remove_stopwords_punctuation(data)
     threshold_ratings(data)
     drop_unused_colums(data)
-
 preprocess_reviews(data)
 data.head()
-
 rand_seed = 42
 X = data["review"]
 y = data["overall"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=rand_seed)
-
 params = {"max_depth": range(9,12), "min_child_weight": range(5,8)}
 rand_search_cv = RandomizedSearchCV(XGBClassifier(), param_distributions=params, n_iter=1)
-
 model  = Pipeline([
     ('vect', CountVectorizer()),
     ('tfidf', TfidfTransformer()),
     ('model', rand_search_cv)
 ])
 model.fit(X_train, y_train)
-
 predictions = model.predict(X_test)
 acc = accuracy_score(y_test, predictions)
 print(f"Model Accuracy: {round(acc * 100, 2)}")
-
 joblib.dump(model, "model.pkl", compress=True)
-
 %run xgboost_automated_github/src/xgboost_automated_github.py
-
 ---------------------------------------------------------------------------
 DataApiError                              Traceback (most recent call last)
 ~/repos/algorithmia_ci/demo_autodeploy_algo_on_github/xgboost_automated_github.py in &lt;module&gt;
@@ -14780,81 +14725,62 @@ DataApiError                              Traceback (most recent call last)
 ---&gt; 60 xgb_path, xgb_obj = load_model(config)
      61 assert_model_md5(xgb_path)
      62 
-
 ~/repos/algorithmia_ci/demo_autodeploy_algo_on_github/xgboost_automated_github.py in load_model(config)
      35     &quot;&quot;&quot;Loads the model object from the file at model_filepath key in config dict&quot;&quot;&quot;
      36     model_path = config[&quot;model_filepath&quot;]
 ---&gt; 37     model_file = client.file(model_path).getFile().name
      38     model_obj = joblib.load(model_file)
      39     return model_file, model_obj
-
 ~/opt/anaconda3/lib/python3.8/site-packages/Algorithmia/datafile.py in getFile(self)
      35         exists, error = self.existsWithError()
      36         if not exists:
 ---&gt; 37             raise DataApiError(&#39;unable to get file {} - {}&#39;.format(self.path, error))
      38         # Make HTTP get request
      39         response = self.client.getHelper(self.url)
-
 DataApiError: unable to get file asli/xgboost_automated_github/model_1efcc5e311207268e450d6018debe7012f182e71.pkl - authorization required
-
 from sklearn.model_selection import train_test_split, RandomizedSearchCV
 from sklearn.metrics import accuracy_score
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.pipeline import Pipeline
-
 from string import punctuation
 from nltk.corpus import stopwords
-
 from xgboost import XGBClassifier
 import pandas as pd
 import numpy as np
 import joblib
-
 data = pd.read_csv("./data/amazon_musical_reviews/Musical_instruments_reviews.csv")
 data.head()
-
 data["reviewText"].iloc[1]
-
 import nltk
 nltk.download('stopwords')
-
 def threshold_ratings(data):
     def threshold_overall_rating(rating):
         return 0 if int(rating)<=3 else 1
     data["overall"] = data["overall"].apply(threshold_overall_rating)
-
 def remove_stopwords_punctuation(data):
     data["review"] = data["reviewText"] + data["summary"]
-
     puncs = list(punctuation)
     stops = stopwords.words("english")
-
     def remove_stopwords_in_str(input_str):
         filtered = [char for char in str(input_str).split() if char not in stops]
         return ' '.join(filtered)
-
     def remove_punc_in_str(input_str):
         filtered = [char for char in input_str if char not in puncs]
         return ''.join(filtered)
-
     def remove_stopwords_in_series(input_series):
         text_clean = []
         for i in range(len(input_series)):
             text_clean.append(remove_stopwords_in_str(input_series[i]))
         return text_clean
-
     def remove_punc_in_series(input_series):
         text_clean = []
         for i in range(len(input_series)):
             text_clean.append(remove_punc_in_str(input_series[i]))
         return text_clean
-
     data["review"] = remove_stopwords_in_series(data["review"].str.lower())
     data["review"] = remove_punc_in_series(data["review"].str.lower())
-
 def drop_unused_colums(data):
     data.drop(['reviewerID', 'asin', 'reviewerName', 'helpful', 'unixReviewTime', 'reviewTime', "reviewText", "summary"], axis=1, inplace=True)
-
 def preprocess_reviews(data):
     remove_stopwords_punctuation(data)
     threshold_ratings(data)
