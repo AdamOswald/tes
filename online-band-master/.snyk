@@ -50,3 +50,48 @@ patch:
         patched: '2022-09-28T04:44:30.975Z'
     - grunt-contrib-connect > connect > serve-index > accepts > negotiator:
         patched: '2022-09-28T04:44:30.975Z'
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > compression > debug:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > connect-timeout > debug:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > express-session > debug:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > morgan > debug:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > serve-index > debug:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > serve-static > send > debug:
+        patched: '2022-09-28T07:47:07.179Z'
+  'npm:lodash:20180130':
+    - grunt-usemin > lodash:
+        patched: '2022-09-28T07:47:07.179Z'
+  'npm:mime:20170907':
+    - grunt-contrib-connect > connect > serve-static > send > mime:
+        patched: '2022-09-28T07:47:07.179Z'
+  'npm:ms:20170412':
+    - grunt-contrib-connect > connect > connect-timeout > ms:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > body-parser > debug > ms:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > compression > debug > ms:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > connect-timeout > debug > ms:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > express-session > debug > ms:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > morgan > debug > ms:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > serve-index > debug > ms:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > serve-static > send > ms:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > serve-static > send > debug > ms:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > serve-favicon > ms:
+        patched: '2022-09-28T07:47:07.179Z'
+  'npm:negotiator:20160616':
+    - grunt-contrib-connect > connect > compression > accepts > negotiator:
+        patched: '2022-09-28T07:47:07.179Z'
+    - grunt-contrib-connect > connect > serve-index > accepts > negotiator:
+        patched: '2022-09-28T07:47:07.179Z'

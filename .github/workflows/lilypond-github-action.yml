@@ -1,0 +1,105 @@
+- name: Lilypond Generator
+  uses: alexandre-touret/lilypond-github-action@1.0-alpha
+
+name: Generate Lilypond music sheets
+on:
+  push:
+    branches:
+      - gh-pages
+jobs:
+  build_sheets:
+    runs-on: ubuntu-latest
+    env:
+        LILYPOND_FILES: "*.ly"
+    steps:
+      - name: Checkout Source 
+        uses: actions/checkout@v1
+      - name: Get changed files
+        id: getfile
+        run: |
+          echo "::set-output name=files::$(find ${{github.workspace}} -name "${{ env.LILYPOND_FILES }}" -printf "%P\n" | xargs)"
+      - name: LILYPOND files considered echo output
+        run: |
+          echo ${{ steps.getfile.outputs.files }}
+      - name: Generate PDF music sheets
+        uses: alexandre-touret/lilypond-github-action@master
+        with:
+            args: -V -fpdf -fpng -fmidi ${{ steps.getfile.outputs.files }}
+      - name: Push Local Changes
+        run: |
+          git config --local user.email "${{ secrets.GIT_USERNAME }}"
+          git config --local user.name "${{ secrets.GIT_EMAIL }}"
+          mkdir -p ${{github.workspace}}/docs/
+          mv -f *.midi ${{github.workspace}}/docs/
+          mv -f *.pdf ${{github.workspace}}/docs/
+          mv -f *.png ${{github.workspace}}/docs/
+          git add ${{github.workspace}}/docs/
+          git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+
+name: Generate Lilypond music sheets
+on:
+  push:
+    branches:
+      - gh-pages
+jobs:
+  build_sheets:
+    runs-on: ubuntu-latest
+    env:
+        LILYPOND_FILES: "*.ly"
+    steps:
+      - name: Checkout Source 
+        uses: actions/checkout@v1
+      - name: Get changed files
+        id: getfile
+        run: |
+          echo "::set-output name=files::$(find ${{github.workspace}} -name "${{ env.LILYPOND_FILES }}" -printf "%P\n" | xargs)"
+      - name: LILYPOND files considered echo output
+        run: |
+          echo ${{ steps.getfile.outputs.files }}
+      - name: Generate PDF music sheets
+        uses: alexandre-touret/lilypond-github-action@master
+        with:
+            args: -V -fpdf -fpng -fmidi ${{ steps.getfile.outputs.files }}
+      - name: Push Local Changes
+        run: |
+          git config --local user.email "${{ secrets.GIT_USERNAME }}"
+          git config --local user.name "${{ secrets.ALT_GIT_EMAIL }}"
+          mkdir -p ${{github.workspace}}/docs/
+          mv -f *.midi ${{github.workspace}}/docs/
+          mv -f *.pdf ${{github.workspace}}/docs/
+          mv -f *.png ${{github.workspace}}/docs/
+          git add ${{github.workspace}}/docs/
+          git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          
+          name: 'Lilypond Generator'
+description: 'Run Lilypond tool with the given set of arguments to generate music sheets'
+author: '@alexandre-touret'
+
+inputs:
+  args:
+    description: 'Arguments for Lilyponid'
+    required: true
+    default: '-h'
+
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+      - ${{ inputs.args }}
+
+branding:
+  icon: 'underline'
+  color: 'blue'
+  
+  
