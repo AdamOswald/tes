@@ -1,8 +1,8 @@
 import pandas as pd
 
 FEAT_ROOT_DIR = 'data/features/'
-XML_PATH = FEAT_ROOT_DIR + 'song_theme_feature_definitions.xml'
-OUTPUT_PATH = FEAT_ROOT_DIR + 'song_theme_feature_definitions.csv'
+XML_PATH = f'{FEAT_ROOT_DIR}song_theme_feature_definitions.xml'
+OUTPUT_PATH = f'{FEAT_ROOT_DIR}song_theme_feature_definitions.csv'
 
 
 def snake_case(string):

@@ -9,5 +9,5 @@ class LoadError(Exception):
         return repr(self.message)
         
     def __repr__(self):
-        return 'LoadError(%s)' % repr(self.message)
+        return f'LoadError({repr(self.message)})'
 

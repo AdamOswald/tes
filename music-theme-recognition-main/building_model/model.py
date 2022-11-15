@@ -103,8 +103,8 @@ for current_label in cfg.SELECTED_LABELS:
 
         # * Update results for classifiers per seed
 
-        label_results_dict.update({current_seed: clf_results_dict})
-        label_models_dict.update({current_seed: clf_models_dict})
+        label_results_dict[current_seed] = clf_results_dict
+        label_models_dict[current_seed] = clf_models_dict
 
     # * Save only the best seeded models and results for the current label
 
@@ -113,10 +113,10 @@ for current_label in cfg.SELECTED_LABELS:
 
     # * Update results per current label
 
-    output_all_results_dict.update({current_label: label_results_dict})
-    output_best_results_dict.update({current_label: label_best_results_dict})
-    output_best_models_dict.update({current_label: label_best_models_dict})
-    output_best_params_dict.update({current_label: label_best_params_dict})
+    output_all_results_dict[current_label] = label_results_dict
+    output_best_results_dict[current_label] = label_best_results_dict
+    output_best_models_dict[current_label] = label_best_models_dict
+    output_best_params_dict[current_label] = label_best_params_dict
 
 
 # * Export data for this run

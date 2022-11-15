@@ -22,6 +22,6 @@ def filter_var_thresh(df, threshold_val):
 
     print(f"There are {(var_feature_np.shape[1])} features left.")
 
-    variant_features = [x for x in df.columns if not x in constant_columns]
+    variant_features = [x for x in df.columns if x not in constant_columns]
 
     return df[variant_features], variant_features

@@ -11,10 +11,8 @@ def _compress(data):
     return struct.pack(">I", len(data)) + zlib.compress(data)
 
 def _getdoc(projectFile):
-    f = open(projectFile, 'rb')
-    data = f.read()
-    f.close()
-
+    with open(projectFile, 'rb') as f:
+        data = f.read()
     # try to parse as xml
     try:
         doc = minidom.parseString(data)
@@ -61,26 +59,22 @@ class Lmms(Dummy):
         if dom.getAttribute('creator') != u'Linux MultiMedia Studio (LMMS)':
             return False
 
-        if dom.getAttribute('type') != u'song':
-            return False
-
-        return True
+        return dom.getAttribute('type') == u'song'
 
     def load(self, inProject):
         self.doc = _getdoc(inProject)
         assert self.doc is not None
 
     def save(self, outProject):
-        f = open(outProject, 'w')
-        f.write(_compress(self.doc.toxml(encoding='utf-8')))
-        f.close()
+        with open(outProject, 'w') as f:
+            f.write(_compress(self.doc.toxml(encoding='utf-8')))
 
     def extension(self):
         return 'mmpz'
 
     def samples(self):
         doms = self.doc.getElementsByTagName('audiofileprocessor')
-        return list(set([dom.getAttribute('src') for dom in doms]))
+        return list({dom.getAttribute('src') for dom in doms})
 
     def effects(self):
         def effectName(dom):
@@ -95,8 +89,9 @@ class Lmms(Dummy):
                         name = u'ladspaeffect-' + node.getAttribute('value')
                         break
             return name
+
         doms = self.doc.getElementsByTagName('effect')
-        return list(set([effectName(dom) for dom in doms]))
+        return list({effectName(dom) for dom in doms})
 
     def generators(self):
         def generatorName(dom):
@@ -111,14 +106,14 @@ class Lmms(Dummy):
                 # strip extension
                 name = title.split('.')[0]
             return name
+
         doms = self.doc.getElementsByTagName('instrument')
-        return list(set([generatorName(dom) for dom in doms]))
+        return list({generatorName(dom) for dom in doms})
 
     def tempo(self):
         doms = self.doc.getElementsByTagName('head')
         for dom in doms:
             if dom.parentNode.localName == u'multimedia-project':
                 return int(dom.getAttribute('bpm'))
-                break
         raise LoadError("Project does not contain <head/>")
 

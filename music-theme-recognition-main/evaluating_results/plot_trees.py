@@ -9,8 +9,7 @@ def plotDecisionTree(estimator, feature_list, target_label):
 
     # Get scores object
     scores_dict = data.best_results_dict[target_label]['DecnTree']
-    scores_list = [k + ' = ' + str(round(v, 3))
-                   for k, v in scores_dict.items()]
+    scores_list = [f'{k} = {str(round(v, 3))}' for k, v in scores_dict.items()]
     textstr = '\n'.join(scores_list)
 
     # Figure size

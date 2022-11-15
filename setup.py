@@ -27,7 +27,7 @@ def _get_version(sha):
     if os.getenv("BUILD_VERSION"):
         version = os.getenv("BUILD_VERSION")
     elif sha is not None:
-        version += "+" + sha[:7]
+        version += f"+{sha[:7]}"
     return version
 
 
@@ -98,10 +98,8 @@ def _init_submodule():
 def _parse_url(path):
     with open(path, "r") as file_:
         for line in file_:
-            match = re.match(r"^\s*URL\s+(https:\/\/.+)$", line)
-            if match:
-                url = match.group(1)
-                yield url
+            if match := re.match(r"^\s*URL\s+(https:\/\/.+)$", line):
+                yield match[1]
 
 
 def _parse_sources():
