@@ -18,7 +18,7 @@ def calc_stats(results_dict, row_headers, match_clf):
         label_stat_dict = get_label_stats(seed_dict, row_headers, match_clf)
 
         # We build the output dict label-by-label
-        stat_dict.update({label: label_stat_dict})
+        stat_dict[label] = label_stat_dict
 
     return stat_dict
 
@@ -80,7 +80,7 @@ def get_label_stats(seed_dict, row_headers, match_clf=True):
     return(label_stat_dict)
 
 
-current_classifiers = [clf for clf in data.config_dict['ACTUAL_CLASSIFIERS']]
+current_classifiers = list(data.config_dict['ACTUAL_CLASSIFIERS'])
 
 
 def calc_clf_stats(results_dict, row_headers):
@@ -141,8 +141,7 @@ def calc_clf_stats(results_dict, row_headers):
 
 
 def stats_range(data):
-    range = max(data) - min(data)
-    return range
+    return max(data) - min(data)
 
 
 """ Calculates the interquartile range of values in a list """
@@ -150,5 +149,4 @@ def stats_range(data):
 
 def stats_iqr(data):
     q3, q1 = np.percentile(data, [75, 25])
-    iqr = q3 - q1
-    return iqr
+    return q3 - q1

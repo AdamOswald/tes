@@ -6,9 +6,8 @@ from eval_utils.results_stats_utils import (calc_clf_stats, calc_stats,
                                             get_label_stats, stats_range, stats_iqr)
 
 current_classifiers = [clf['name'] for clf in data.config_dict['CLASSIFIERS']]
-current_actual_classifiers = [
-    clf for clf in data.config_dict['ACTUAL_CLASSIFIERS']]
-current_labels = [clf for clf in data.config_dict['SELECTED_LABELS']]
+current_actual_classifiers = list(data.config_dict['ACTUAL_CLASSIFIERS'])
+current_labels = list(data.config_dict['SELECTED_LABELS'])
 
 average_clf = {clf: mean for clf in current_classifiers}
 stdev_clf = {clf: stdev for clf in current_actual_classifiers}

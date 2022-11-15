@@ -4,44 +4,23 @@ from mtr_utils import config as cfg
 
 class scoringFunctions:
 
-    def f1bin(y_test, y_pred):
-        return f1_score(
-            y_true=y_test,
-            y_pred=y_pred
-        )
+    def f1bin(self, y_pred):
+        return f1_score(y_true=self, y_pred=y_pred)
 
-    def f1mac(y_test, y_pred):
-        return f1_score(
-            y_true=y_test,
-            y_pred=y_pred,
-            average='macro'
-        )
+    def f1mac(self, y_pred):
+        return f1_score(y_true=self, y_pred=y_pred, average='macro')
 
-    def accuracy(y_test, y_pred):
-        return accuracy_score(
-            y_true=y_test,
-            y_pred=y_pred
-        )
+    def accuracy(self, y_pred):
+        return accuracy_score(y_true=self, y_pred=y_pred)
 
-    def precision(y_test, y_pred):
-        return precision_score(
-            y_true=y_test,
-            y_pred=y_pred,
-            zero_division=0
-        )
+    def precision(self, y_pred):
+        return precision_score(y_true=self, y_pred=y_pred, zero_division=0)
 
-    def recall(y_test, y_pred):
-        return recall_score(
-            y_true=y_test,
-            y_pred=y_pred,
-            zero_division=0
-        )
+    def recall(self, y_pred):
+        return recall_score(y_true=self, y_pred=y_pred, zero_division=0)
 
-    def rocauc(y_test, y_pred):
-        return roc_auc_score(
-            y_true=y_test,
-            y_score=y_pred,
-        )
+    def rocauc(self, y_pred):
+        return roc_auc_score(y_true=self, y_score=y_pred)
 
 
 metrics = {
@@ -60,9 +39,7 @@ def get_scoring(estimator, x_test, y_test):
 
     y_pred = estimator.predict(x_test)
 
-    scores = {}
-
-    for metric, scoring_func in current_metrics.items():
-        scores[metric] = scoring_func(y_test, y_pred)
-
-    return scores
+    return {
+        metric: scoring_func(y_test, y_pred)
+        for metric, scoring_func in current_metrics.items()
+    }

@@ -26,7 +26,6 @@ class Dummy():
     @staticmethod
     def merge(inProject1, inProject2, outProject):
         "merge the project files into 1 file"
-        pass
 
     def load(self, inProject):
         """
@@ -50,7 +49,6 @@ class Dummy():
 
     def render(self, outWave):
         "render the project into a wave file."
-        pass
 
     def samples(self):
         "return a list of samples required by this project"

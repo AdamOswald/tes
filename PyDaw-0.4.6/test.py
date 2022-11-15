@@ -9,7 +9,7 @@ def main(paths):
 
         print("Beats per minute: %i" % f.tempo())
         if f.title():
-            print("Project title: %s" % f.title())
+            print(f"Project title: {f.title()}")
 
         stuff = (
             ("Generators", f.generators()),
@@ -25,6 +25,6 @@ def main(paths):
 if __name__ == "__main__":
     paths = sys.argv[1:]
     if paths == []:
-        sys.exit("usage: %s <path> ..." % sys.argv[0])
+        sys.exit(f"usage: {sys.argv[0]} <path> ...")
     main(paths)
 

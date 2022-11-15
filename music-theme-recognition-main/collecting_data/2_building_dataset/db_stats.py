@@ -7,8 +7,8 @@ import pandas as pd
 from process_db import *
 
 LABELS_DIR = 'data/labels/'
-LABEL_DB_PATH = LABELS_DIR + 'song_theme_label_database.xlsx'
-STATS_EXPORT_PATH = LABELS_DIR + 'label_stats_summary.json'
+LABEL_DB_PATH = f'{LABELS_DIR}song_theme_label_database.xlsx'
+STATS_EXPORT_PATH = f'{LABELS_DIR}label_stats_summary.json'
 
 # Convert all p's to 1's
 p_to_1_convert(LABEL_DB_PATH)

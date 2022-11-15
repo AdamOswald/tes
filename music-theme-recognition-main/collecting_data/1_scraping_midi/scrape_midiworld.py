@@ -7,7 +7,7 @@ source = 'midiworld'
 domain = "http://www.midiworld.com"
 category = 'movie%20themes'  # CHANGE THIS
 
-OUTPUT_DIR = 'data/bin/' + source + "/" + re.sub(r'%20', "-", category)
+OUTPUT_DIR = f'data/bin/{source}/' + re.sub(r'%20', "-", category)
 if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
 
@@ -24,23 +24,20 @@ def getFileData(anchor):
     else:
         song_title = extracted_text[0]
         song_artist = ""
-    file_data = {"song_title": song_title,
-                 "song_artist": song_artist}
-
-    return file_data
+    return {"song_title": song_title, "song_artist": song_artist}
 
 
 def downloadFile(anchor, filename):
 
     link = anchor['href']
     mid_file = requests.get(link, stream=True)
-    with open(OUTPUT_DIR + '/' + filename, 'wb') as saveMidFile:
+    with open(f'{OUTPUT_DIR}/{filename}', 'wb') as saveMidFile:
         saveMidFile.write(mid_file.content)
-        print('Downloaded \"{}\" successfully.'.format(filename))
+        print(f'Downloaded \"{filename}\" successfully.')
 
 
 def getFileName(song_title, song_artist):
-    return song_artist + '_' + song_title + '_' + source + '.mid'
+    return f'{song_artist}_{song_title}_{source}.mid'
 
 
 # >>> ENTRY

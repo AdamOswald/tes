@@ -15,7 +15,7 @@ def explode_bins(feature_str: str) -> Set[Set[str]]:
     feature_bin_count = ft_def_df.loc[ft_def_df.id ==
                                       feature_str]['parallel_dimensions'].values[0]
     if feature_bin_count > 1:
-        return {feature_str + '_' + str(x) for x in range(feature_bin_count)}
+        return {f'{feature_str}_{str(x)}' for x in range(feature_bin_count)}
     else:
         return {feature_str}
 
