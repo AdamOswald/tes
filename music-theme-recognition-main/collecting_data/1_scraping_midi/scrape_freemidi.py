@@ -5,7 +5,7 @@ from urllib import request
 from urllib.request import urlopen
 
 source = 'freemidi'
-domain = "http://www." + source + ".com"
+domain = f"http://www.{source}.com"
 
 CURRENT_PATH = os.path.realpath(__file__)
 
@@ -13,7 +13,7 @@ print(f"\n\nScraping from {domain}")
 print("Type Y to scrape; anything else to skip\n")
 
 # Main page soup
-all_page = domain + "all"
+all_page = f"{domain}all"
 all_page_doc = request.urlopen(all_page).read().decode('utf8', errors='ignore')
 main_soup = BeautifulSoup(all_page_doc, 'html.parser')
 

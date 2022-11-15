@@ -5,9 +5,9 @@ import os
 import time
 
 source = 'bitmidi'
-domain = "http://www." + source + ".com"
+domain = f"http://www.{source}.com"
 
-OUTPUT_DIR = 'data/bin/' + source
+OUTPUT_DIR = f'data/bin/{source}'
 if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
 
@@ -62,10 +62,10 @@ while terminate == 0:
                 mid_file = requests.get(download_link, stream=True, headers={
                     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
                 })
-                filename = download_header + "_" + source + ".mid"
-                with open(OUTPUT_DIR + '/' + filename, 'wb') as saveMidFile:
+                filename = f"{download_header}_{source}.mid"
+                with open(f'{OUTPUT_DIR}/{filename}', 'wb') as saveMidFile:
                     saveMidFile.write(mid_file.content)
-                    print('Downloaded {} successfully.\n'.format(download_header))
+                    print(f'Downloaded {download_header} successfully.\n')
 
                 success = 1
                 # Note: we add delay to the download to prevent tripping an error
@@ -75,7 +75,5 @@ while terminate == 0:
                 if success == 0:
                     print(parsed_sub_page)
                     sucesss = success - 1
-                pass
-
     page_number = page_number + 1
     time.sleep(2)

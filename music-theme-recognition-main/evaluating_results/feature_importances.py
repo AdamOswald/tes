@@ -58,23 +58,19 @@ for current_label in models_dict:
     sorted_idx = tree_feature_importances.argsort()[::-1]
 
     # Build feature lists
-    top_features_scores = []
+    top_features_scores = [
+        (feature_list[id], round(tree_feature_importances[id], 3))
+        for id in sorted_idx[:10]
+    ]
 
-    # Report top 10 important features
-    for id in sorted_idx[:10]:
-        top_features_scores.append(
-            (
-                feature_list[id],
-                round(tree_feature_importances[id], 3)
-            )
-        )
-    all_scores.update({current_label: top_features_scores})
+
+    all_scores[current_label] = top_features_scores
 
     # Report into tables
     table = tabulate(top_features_scores, headers=[
                      'feature', 'imp_sc'], tablefmt='github')
     print(table, end='\n\n')
-    all_tables.update({current_label: table})
+    all_tables[current_label] = table
 
 tables_txt_dump(all_tables, 'Feature Importances', 'md/feat_imp.md')
 

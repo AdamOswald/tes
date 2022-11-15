@@ -4,13 +4,16 @@ from eval_utils import config as cfg
 
 label_stats_dict = json.load(open('data/labels/label_stats_summary.json', "r"))
 std_results_dict = json.load(
-    open(cfg.RUN_DIR + 'results/results_avg.json', "r"))
-label_results_dict = json.load(
-    open(cfg.RUN_DIR + 'results/results_labels.json', "r"))
-config_dict = json.load(
-    open(cfg.RUN_DIR + 'run_config.json', "r"))
+    open(f'{cfg.RUN_DIR}results/results_avg.json', "r")
+)
 
-label_stats_list = [i for i in label_stats_dict['%'].keys()]
+label_results_dict = json.load(
+    open(f'{cfg.RUN_DIR}results/results_labels.json', "r")
+)
+
+config_dict = json.load(open(f'{cfg.RUN_DIR}run_config.json', "r"))
+
+label_stats_list = list(label_stats_dict['%'].keys())
 label_stats_list.reverse()
 # label_stats_list = config_dict['SELECTED_LABELS']
 
@@ -49,7 +52,7 @@ for label, stat_dict in std_results_dict.items():
 #             marker='o',
 #             )
 
-plt.title(label_y + " by Positive Label Proportion")
+plt.title(f"{label_y} by Positive Label Proportion")
 plt.xlabel("Positive Label Proportion (%)")
 plt.ylabel(label_y)
 

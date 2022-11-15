@@ -1,5 +1,6 @@
 """ Configuration settings for the building the MTR models """
 
+
 import random
 
 import numpy as np
@@ -19,7 +20,7 @@ from mtr_utils.scaling import SCALERS
 
 RUN_ID = '.temp'
 
-OUTPUT_PATH = 'data/output/' + RUN_ID + '/'
+OUTPUT_PATH = f'data/output/{RUN_ID}/'
 
 
 # * MODEL PARAMS ---------------------------------------------------------------

@@ -97,7 +97,7 @@ def round_dict_values(d):
 def tables_txt_dump(output_tables, caption, relpath):
     """ Helper function to write tables to text files """
 
-    filepath = cfg.OUTPUT_PATH + 'tables/' + relpath
+    filepath = f'{cfg.OUTPUT_PATH}tables/{relpath}'
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
 
     with open(filepath, "w") as f:
