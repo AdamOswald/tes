@@ -39,7 +39,7 @@
   "homepage": "https://github.com/AdamOswald/tes",
   "devDependencies": {
     "grunt": "^1.5.3",
-    "grunt-contrib-nodeunit": "~0.4.0",
+    "grunt-contrib-nodeunit": "~4.0.0",
     "grunt-smash": "^0.1.0",
     "grunt-jsbeautifier": "^0.2.6",
     "grunt-contrib-uglify": "^5.0.0"
