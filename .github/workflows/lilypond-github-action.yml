@@ -13,7 +13,7 @@ jobs:
         LILYPOND_FILES: "*.ly"
     steps:
       - name: Checkout Source 
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
       - name: Get changed files
         id: getfile
         run: |
@@ -54,7 +54,7 @@ jobs:
         LILYPOND_FILES: "*.ly"
     steps:
       - name: Checkout Source 
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
       - name: Get changed files
         id: getfile
         run: |
