@@ -15,7 +15,7 @@ scikit_learn==1.0.2
 tabulate==0.8.9
 dj-database-url==0.5.0
 Django>=3.2.13,<4.0
-asgiref==3.3.4
+asgiref==3.5.2
 sqlparse>=0.4.2,<0.5.0
 django-money==2.1.1
 liqpay-sdk-python3==1.0.3
