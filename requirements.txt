@@ -30,5 +30,5 @@ six==1.16.0
 tzlocal==2.1
 certifi==2020.12.5
 pytz==2021.3
-tornado==6.1
+tornado==6.2
 gunicorn
