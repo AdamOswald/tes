@@ -4,7 +4,7 @@ torch
 kaldi_io
 SoundFile
 # For build and test-time dependencies please refer to CONTRIBUTING.md
-beautifulsoup4==4.11.1
+beautifulsoup4==4.12.2
 imbalanced_learn==0.10.1
 imblearn==0.0
 matplotlib==3.6.2
@@ -32,7 +32,7 @@ certifi==2022.12.7
 pytz==2022.6
 tornado==6.2
 gunicorn
-beautifulsoup4==4.11.1
+beautifulsoup4==4.12.2
 imbalanced_learn==0.10.1
 imblearn==0.0
 matplotlib==3.6.2
