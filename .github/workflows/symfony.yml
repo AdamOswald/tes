@@ -19,7 +19,7 @@ jobs:
     - uses: shivammathur/setup-php@6d7209f44a25a59e904b1ee9f3b0c33ab2cd888d
       with:
         php-version: '8.0'
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Copy .env.test.local
       run: php -r "file_exists('.env.test.local') || copy('.env.test', '.env.test.local');"
     - name: Cache Composer packages
